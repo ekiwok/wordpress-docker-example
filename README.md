@@ -1,6 +1,6 @@
 # wordpress-docker-example
 
-Copy `.env.dist` as `.env`. If you want, change PORT and WP_VERSION in `.env`.
+Copy `.env.dist` as `.env`. If you want, change PORT in `.env`.
 
 Run `docker-compose up -d`.
 
@@ -14,9 +14,8 @@ Go to `http://YOUR_IP_OR_DOMAIN[:PORT]/admin/install.php` and finish installatio
 
 # Hints
 
-- It might be necessary for some plugins to have additional php extensions installed. To do this you may add directory fe. called `wp` with 
-`Dockerfile` and desired `php.ini` in it. `Dockerfile` would extend docker image by `FROM wordpress:${WP_VERSION}-php7.0-fpm` and copy `php.ini`
-by `COPY php.ini /usr/local/etc/php`. Later it would install desired extension [as described in official php image](https://hub.docker.com/_/php/).
+- It might be necessary for some plugins to have additional php extensions installed. Add whatever you need in wp/Dockerfile
+Install desired extension [as described in official php image](https://hub.docker.com/_/php/).
 - To access database on your host you may add `ports` configuration to `mysql` service.
 Yet it might be good idea to do backup using some wp plugin.
 - It might be a good idea to edit `nginx/nginx.conf`, turn on gzip, etc.

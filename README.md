@@ -19,6 +19,7 @@ Go to `http://YOUR_IP_OR_DOMAIN[:PORT]/admin/install.php` and finish installatio
 by `COPY php.ini /usr/local/etc/php`. Later it would install desired extension [as described in official php image](https://hub.docker.com/_/php/).
 - To access database on your host you may add `ports` configuration to `mysql` service.
 Yet it might be good idea to do backup using some wp plugin.
+- It might be a good idea to edit `nginx/nginx.conf`, turn on gzip, etc.
 
 # Disclaimer
 

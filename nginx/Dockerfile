@@ -1,3 +1,3 @@
-FROM nginx
+FROM ekiwok/nginx-pagespeed:master
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /usr/local/nginx/conf/nginx.conf

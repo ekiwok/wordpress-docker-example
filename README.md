@@ -27,3 +27,9 @@ This uses official [wordpress docker image](https://hub.docker.com/_/wordpress/)
 This is an example only.
 
 Use on your own risk.
+
+# Changelog
+
+### 1.1.0
+
+- It's now using ekiwok/nginx-pagespeed instead of official nginx image.

@@ -4,7 +4,7 @@ Copy `.env.dist` as `.env`. If you want, change PORT in `.env`.
 
 Run `docker-compose up -d`.
 
-Go to `http://YOUR_IP_OR_DOMAIN[:PORT]/admin/install.php` and finish installation.
+Go to `http://YOUR_IP_OR_DOMAIN[:PORT]/wp-admin/install.php` and finish installation.
 
 # data-* directories
 

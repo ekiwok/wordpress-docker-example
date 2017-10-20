@@ -1,4 +1,4 @@
-FROM wordpress:4.7.0-php7.0-fpm
+FROM wordpress:4.8.2-php7.0-fpm
 
 RUN { \
 		echo 'upload_max_filesize=8M'; \

@@ -33,3 +33,19 @@ services:
       - MYSQL_DATABASE=wordpress
     volumes:
       - ./data-mysql:/var/lib/mysql
+
+  backup:
+    image: ekiwok/backup
+    links:
+      - mysql
+    volumes:
+      - ./data-wordpress:/var/www/html/wp-content
+      - ./data-backup:/var/dst
+    environment:
+      - DB_PASS=root
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_NAME=wordpress
+      - DIRECTORIES=/var/www/html/wp-content
+#      - DST=/var/dst/${BACKUP_NAME}.tar.gz

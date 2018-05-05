@@ -30,6 +30,10 @@ Use on your own risk.
 
 # Changelog
 
+### 1.2.0
+
+- It's easy to backup wp-content and mysql with: `docker-compose run -e DST=/var/dst/$BACKUP_NAME.tar.gz backup`
+
 ### 1.1.0
 
 - It's now using ekiwok/nginx-pagespeed instead of official nginx image.

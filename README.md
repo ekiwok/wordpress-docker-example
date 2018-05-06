@@ -30,6 +30,10 @@ Use on your own risk.
 
 # Changelog
 
+### 1.2.1
+
+- Always restart containers
+
 ### 1.2.0
 
 - It's easy to backup wp-content and mysql with: `docker-compose run -e DST=/var/dst/$BACKUP_NAME.tar.gz backup`
